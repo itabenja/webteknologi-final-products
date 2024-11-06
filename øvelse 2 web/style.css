@@ -1,0 +1,92 @@
+/* Overordnet styling */
+body {
+    font-family: "Helvetica Neue", sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Hovedindhold og container */
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+#content {
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Albumkort styling */
+.album {
+    background-color: #fff;
+    border: 2px solid #db3482;
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Albumnavn */
+.album h3 {
+    margin: 0;
+    font-size: 1.4em;
+    color: #2c3e50;
+}
+
+/* Link til kunstnerens hjemmeside */
+.album a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Vis/skjul knap */
+.toggle-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-button:hover {
+    background-color: #c0392b;
+}
+
+.toggle-button span {
+    margin-left: 5px;
+}
+
+/* Trackliste styling */
+.tracklist {
+    display: none;
+    margin-top: 10px;
+    padding-left: 20px;
+    border-left: 3px solid #db34ba;
+    color: #7f8c8d;
+}
+
+.tracklist p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* Ikonstil */
+.toggle-icon {
+    font-size: 1.1em;
+    transition: transform 0.3s;
+}
+    
+.toggle-icon.rotate {
+    transform: rotate(90deg);
+}
